@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+	<style>
+		body{
+		background-image:url(wallpaper2.jpg);
+		background-position: cover;
+		background-size: 100%;
+		background-repeat: no-repeat;
+}
+ box{
+    	    	border:3px;
+
+ }
+
+
+.container {
+  padding: 16px;
+}
+
+input[type=text], input[type=password] {
+  width: 25%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+
+}
+img .container{
+	text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 20%;
+  border-radius: 30%;
+}
+
+input[type=text], input[type=password]{
+ width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.inputdata label{
+	position:absolute;
+}
+.inputdata input{
+   margin-left:10em;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.registerbtn {
+  background-color: #C64470;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: ;
+  cursor: pointer;
+  width: 20%;
+  opacity: 0.9;
+}
+.registerbtn:hover {
+  opacity:1;
+}
+
+a {
+  color: dodgerblue;
+}
+
+
+	</style>
+</head>
+<body>
+	<script>
+    function myfunc(){
+    var x1=document.getElementById('fn');
+    var x2=document.getElementById('ln');
+var x3=document.getElementById('ph');
+var x4=document.getElementById('em');
+var x5=document.getElementById('pss');
+
+
+    if(x1.value==""||x2.value==""||x3.value==""||x4.value==""||x5.value==""){
+    alert("Fill all values");
+   }
+}
+  </script>
+<form>
+			<div class="imgcontainer">
+				<center><img src="kp.jfif" alt="Avatar" class="	avatar"></center>
+			</div>
+			<div class="container">
+				<h1><i>Register</i></h1>
+				<hr>
+				<div class="inputdata">
+					<label><b>Firstname</b></label>
+					<input type="text" placeholder="Enter fname" align="right" id="fn"><br>
+					<label><b>Lastname</b></label>
+					<input type="text" placeholder="Enter lname" id="ln"><br>
+
+				<label for="E-mail">
+					<b>E-mail</b></label>
+					<input type="text" placeholder="Enter e-mail" name="e-mail" required id="em">
+
+					<label for="psw">
+						<b>Password</b></label>
+							<input type="password" placeholder="Enter password" name="psw" required id="pss"> 
+							<label><b>Phone number</b></label>
+							<input type="text" placeholder="Enter ph-number" id="ph">
+						</div>
+						<hr>
+
+						<p>By creating an account you agree to our <a href="#">Terms and Privacy policies</a></p>
+
+							<a href="login.html"><button type="submit" class="registerbtn" onclick="myfunc()">Register</button></a>
+							</div>
+							<p>Already have an account?<a href="login.html">Login</a></p>
+						</form>
+					</div>
+</body>
+</html>
